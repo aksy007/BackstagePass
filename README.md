@@ -1,5 +1,7 @@
 # React Feed Post UI - Architecture Plan
 
+## App URL: https://aksy007.github.io/BackstagePass/
+
 ## Project Overview
 
 A responsive social media feed UI built with React, featuring light/dark mode support, interactive components, and carefully designed visual hierarchy.
