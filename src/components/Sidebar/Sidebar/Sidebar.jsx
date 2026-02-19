@@ -7,7 +7,6 @@ const Sidebar = ({ challengeDays = 9, streak = 1 }) => {
 
   const handleDayClick = useCallback(
     (dayNumber) => {
-      // Only allow selection of days that are unlocked (streak >= dayNumber)
       if (streak >= dayNumber) {
         setSelectedDay(dayNumber);
       }
@@ -15,7 +14,6 @@ const Sidebar = ({ challengeDays = 9, streak = 1 }) => {
     [streak],
   );
 
-  // Generate days array based on challengeDays - memoized to prevent recalculation
   const daysArray = useMemo(
     () =>
       Array.from({ length: challengeDays }, (_, i) => {
@@ -25,25 +23,61 @@ const Sidebar = ({ challengeDays = 9, streak = 1 }) => {
         return {
           id: dayNumber,
           number: dayNumber,
-          isUnlocked: isUnlocked,
+          isUnlocked,
         };
       }),
     [challengeDays, streak],
   );
 
+  // Split into three groups
+  const beforeSelected = daysArray.filter((d) => d.number < selectedDay) || [];
+  const selected = daysArray.find((d) => d.number === selectedDay) || [];
+  const afterSelected = daysArray.filter((d) => d.number > selectedDay) || [];
+
   return (
     <aside className={styles.sidebar}>
       <nav className={styles.nav}>
-        {daysArray.map((day) => (
-          <DayItem
-            key={day.id}
-            day={day}
-            streak={streak}
-            isSelected={selectedDay === day.number}
-            onClick={handleDayClick}
-            dayNumber={day.number}
-          />
-        ))}
+        {/* Days before selected */}
+        <div className={styles.beforeSelected}>
+          {beforeSelected.map((day) => (
+            <DayItem
+              key={day.id}
+              day={day}
+              streak={streak}
+              isSelected={false}
+              onClick={handleDayClick}
+              dayNumber={day.number}
+            />
+          ))}
+        </div>
+
+        {/* Selected day rendered separately */}
+        <div className={styles.selected}>
+          {selected && (
+            <DayItem
+              key={selected.id}
+              day={selected}
+              streak={streak}
+              isSelected={true}
+              onClick={handleDayClick}
+              dayNumber={selected.number}
+            />
+          )}
+        </div>
+
+        {/* Days after selected */}
+        <div className={styles.afterSelected}>
+          {afterSelected.map((day) => (
+            <DayItem
+              key={day.id}
+              day={day}
+              streak={streak}
+              isSelected={false}
+              onClick={handleDayClick}
+              dayNumber={day.number}
+            />
+          ))}
+        </div>
       </nav>
     </aside>
   );

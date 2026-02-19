@@ -1,7 +1,7 @@
 :root {
   /* Light Mode Colors */
   --bg-primary: rgba(255, 255, 255, 1);
-  --bg-secondary: #f5f5f5;
+  --bg-secondary: rgba(234, 231, 236, 1);
   --bg-tertiary: #e0e0e0;
   --bg-topbar: #2a2a2a;
 
@@ -95,7 +95,7 @@
     --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.5);
 
-    --gradient-grey-1: rgba(0, 0, 0, 0);
+    --gradient-grey-1: rgba(18, 17, 19, 0.3);
     --gradient-grey-2: #030303 100%;
 
     --grey: rgba(235, 234, 248, 0.08);
