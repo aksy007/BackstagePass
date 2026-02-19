@@ -1,5 +1,5 @@
-import TopBar from "./TopBar";
-import MainHeader from "./MainHeader";
+import TopBar from "../TopBar/TopBar";
+import MainHeader from "../MainHeader/MainHeader";
 import styles from "./Layout.module.css";
 
 const Layout = ({

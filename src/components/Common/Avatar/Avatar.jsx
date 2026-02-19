@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./Avatar.module.css";
-import { DEFAULT_AVATAR_PLACEHOLDER } from "../../constants/defaults";
+import { DEFAULT_AVATAR_PLACEHOLDER } from "../../../constants/defaults";
 
 const Avatar = ({ src, alt, size = "md", className = "", ...props }) => {
   const [imgSrc, setImgSrc] = useState(src);

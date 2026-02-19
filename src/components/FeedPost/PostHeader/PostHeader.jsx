@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { FiMoreHorizontal } from "react-icons/fi";
-import Avatar from "../Common/Avatar";
+import Avatar from "../../Common/Avatar/Avatar";
 import styles from "./PostHeader.module.css";
 
 const PostHeader = ({ user, timestamp }) => {

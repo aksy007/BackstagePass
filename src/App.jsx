@@ -1,5 +1,5 @@
-import Layout from "./components/Layout/Layout";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Layout from "./components/Layout/Layout/Layout";
+import Sidebar from "./components/Sidebar/Sidebar/Sidebar";
 import MainContent from "./components/MainContent/MainContent";
 import {
   user,

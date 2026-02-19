@@ -1,11 +1,11 @@
 import { memo, useMemo } from "react";
-import SubscriberPostCard from "./SubscriberPostCard";
-import Avatar from "../Common/Avatar";
+import SubscriberPostCard from "../SubscriberPostCard/SubscriberPostCard";
+import Avatar from "../../Common/Avatar/Avatar";
 import styles from "./FeedPostCard.module.css";
 import {
   DEFAULT_PARTICIPANTS,
   DEFAULT_USER_AVATARS,
-} from "../../constants/defaults";
+} from "../../../constants/defaults";
 
 const FeedPostCard = ({
   posts = [],

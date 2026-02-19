@@ -1,13 +1,13 @@
 import { memo } from "react";
 import clsx from "clsx";
-import ConfettiHeader from "../Confetti/ConfettiHeader";
-import PinnedHeader from "./PinnedHeader";
-import PostHeader from "./PostHeader";
-import PostContent from "./PostContent";
-import PostMedia from "./PostMedia";
-import PostFooter from "./PostFooter";
+import ConfettiHeader from "../../Confetti/ConfettiHeader";
+import PinnedHeader from "../PinnedHeader/PinnedHeader";
+import PostHeader from "../PostHeader/PostHeader";
+import PostContent from "../PostContent/PostContent";
+import PostMedia from "../PostMedia/PostMedia";
+import PostFooter from "../PostFooter/PostFooter";
 import styles from "./SubscriberPostCard.module.css";
-import { DEFAULT_ENGAGEMENT } from "../../constants/defaults";
+import { DEFAULT_ENGAGEMENT } from "../../../constants/defaults";
 
 const SubscriberPostCard = ({
   post,

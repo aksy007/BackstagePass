@@ -1,10 +1,10 @@
 import { memo } from "react";
 import { HiOutlineBell } from "react-icons/hi";
-import EmojiWithNumber from "../Common/EmojiWithNumber";
-import Avatar from "../Common/Avatar";
+import EmojiWithNumber from "../../Common/EmojiWithNumber/EmojiWithNumber";
+import Avatar from "../../Common/Avatar/Avatar";
 import styles from "./TopBar.module.css";
-import { DEFAULT_FLAME_COUNT } from "../../constants/defaults";
-import logo from "../../assets/BackstagePassLogo.png";
+import { DEFAULT_FLAME_COUNT } from "../../../constants/defaults";
+import logo from "../../../assets/BackstagePassLogo.png";
 
 const TopBar = ({ user, flameCount = DEFAULT_FLAME_COUNT }) => {
   return (

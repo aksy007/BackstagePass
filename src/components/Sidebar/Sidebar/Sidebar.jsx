@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo } from "react";
-import DayItem from "./DayItem";
+import DayItem from "../DayItem/DayItem";
 import styles from "./Sidebar.module.css";
 
 const Sidebar = ({ challengeDays = 9, streak = 1 }) => {
@@ -12,7 +12,7 @@ const Sidebar = ({ challengeDays = 9, streak = 1 }) => {
         setSelectedDay(dayNumber);
       }
     },
-    [streak]
+    [streak],
   );
 
   // Generate days array based on challengeDays - memoized to prevent recalculation
@@ -28,7 +28,7 @@ const Sidebar = ({ challengeDays = 9, streak = 1 }) => {
           isUnlocked: isUnlocked,
         };
       }),
-    [challengeDays, streak]
+    [challengeDays, streak],
   );
 
   return (

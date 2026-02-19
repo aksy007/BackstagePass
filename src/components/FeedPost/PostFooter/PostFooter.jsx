@@ -1,8 +1,8 @@
 import { memo } from "react";
 import { FiMessageCircle } from "react-icons/fi";
-import EmojiWithNumber from "../Common/EmojiWithNumber";
+import EmojiWithNumber from "../../Common/EmojiWithNumber/EmojiWithNumber";
 import styles from "./PostFooter.module.css";
-import { DEFAULT_ENGAGEMENT } from "../../constants/defaults";
+import { DEFAULT_ENGAGEMENT } from "../../../constants/defaults";
 
 const PostFooter = ({
   emojis = DEFAULT_ENGAGEMENT.emojis,
