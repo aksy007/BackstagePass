@@ -1,0 +1,10 @@
+.mediaSection {
+  width: 100%;
+}
+
+.mediaSection img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

@@ -1,0 +1,61 @@
+.feedPostCard {
+  background-color: var(--bg-primary);
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.headerSection {
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headerText {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-xs);
+}
+
+.avatarGroup {
+  display: flex;
+  align-items: center;
+  margin: 0 var(--spacing-xs);
+}
+
+.avatarGroup > div {
+  margin-left: -8px;
+  position: relative;
+}
+
+.avatarGroup > div:first-child {
+  margin-left: 0;
+}
+
+.avatarGroup > div .avatar {
+  border: 2px solid var(--bg-primary);
+}
+
+.participantsCount {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  margin-top: var(--spacing-xs);
+}
+
+.postsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}

@@ -1,0 +1,65 @@
+.dayItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background-color: transparent;
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+
+.dayItem:hover:not(:disabled):not(.selected) {
+  background-color: transparent;
+}
+
+.dayItem:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.dayItem.selected {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-radius: 50px 0 0 50px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  box-shadow: none;
+  margin: 0;
+  position: relative;
+}
+
+.dayText {
+  flex: 1;
+}
+
+.checkIconContainer {
+  width: 20px;
+  height: 20px;
+  background-color: var(--accent-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: var(--spacing-sm);
+}
+
+.checkIcon {
+  width: 12px;
+  height: 12px;
+  color: #ffffff;
+  stroke-width: 3;
+}
+
+.lockIcon {
+  width: 18px;
+  height: 18px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  margin-left: var(--spacing-sm);
+}

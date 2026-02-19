@@ -1,0 +1,39 @@
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-tertiary);
+  height: 32px;
+  width: 32px;
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Size variants */
+.sm {
+  width: 32px;
+  height: 32px;
+}
+
+.md {
+  width: 32px;
+  height: 32px;
+}
+
+.lg {
+  width: 32px;
+  height: 32px;
+}
+
+.xl {
+  width: 32px;
+  height: 32px;
+}

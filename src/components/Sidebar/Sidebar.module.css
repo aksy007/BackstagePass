@@ -1,0 +1,37 @@
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    360deg,
+    var(--gradient-grey-1) 0%,
+    var(--gradient-grey-2) 100%
+  );
+  padding: var(--spacing-lg) 0 var(--spacing-lg) 12px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: fit-content;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 180px;
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    width: 150px;
+    padding: var(--spacing-sm);
+  }
+}

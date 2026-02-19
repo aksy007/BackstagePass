@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background-color: var(--grey);
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.emojis {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.emoji {
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.number {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+}

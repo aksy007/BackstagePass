@@ -1,0 +1,155 @@
+.subscriberPostCard {
+  background-color: transparent;
+  border-radius: 30px;
+  overflow: visible;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid var(--border-color);
+}
+
+.subscriberPostCard.nested {
+  margin: 0 4px;
+  max-width: calc(100% - 8px);
+}
+
+.cardContent {
+  background-color: var(--bg-primary);
+  border-radius: 30px;
+  margin-top: -35px;
+  position: relative;
+}
+
+.cardContent.noConfetti {
+  border-radius: 30px;
+  margin-top: 0;
+  padding-top: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.userName {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+}
+
+.timestamp {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.optionsButton {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  transition: background-color var(--transition-base);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.optionsButton:hover {
+  background-color: var(--bg-secondary);
+}
+
+.optionsIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.summary {
+  padding: 0 var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+.mediaSection {
+  width: 100%;
+  margin-bottom: var(--spacing-md);
+}
+
+.mediaSection img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px var(--spacing-lg);
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.emojiIcon {
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.commentIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--transition-base);
+}
+
+.commentIcon:hover {
+  color: var(--text-primary);
+}
+
+.footerRight {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.commentsCount {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
